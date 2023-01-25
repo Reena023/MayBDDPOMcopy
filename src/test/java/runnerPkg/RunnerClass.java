@@ -15,7 +15,8 @@ import io.cucumber.junit.CucumberOptions;
 //                tags = "@Release1.0 and @Release2.0",
  //               tags = "@Smoke and Regression",
  //               tags = "@Release1.0 or @Release2.0",
-                  tags = "@E2E and not @Release2.0")
+  //              tags = "@E2E and not @Release2.0")
+                  tags = "@Smoke and @Regression") //and @Release1.0")
 public class RunnerClass {
 
 }

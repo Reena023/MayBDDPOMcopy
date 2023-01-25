@@ -1,7 +1,9 @@
 package pageFactoryPkg;
 
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -35,6 +37,15 @@ public class SearchResultPage extends MainClass {
 	
 	public boolean visibilityOfNoResultErrorMsg() {
 		 return noResultErrorMsg.isDisplayed();
+	}
+	
+	public String noResultErrorMsgTxt() {
+		return noResultErrorMsg.getText();
+	}
+	
+	public void hitEnterKey() {
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ENTER).build().perform();
 	}
 
 }

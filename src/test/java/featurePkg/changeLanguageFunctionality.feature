@@ -17,7 +17,7 @@
 ## (Comments)
 #Sample Feature Definition Template
 
-@Release1.0
+
 Feature: Change Language Functionality
 @Smoke @Regression
 Scenario Outline: Change language from change language page
